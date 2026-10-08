@@ -6,7 +6,7 @@
 
   function shell(content){
     app.innerHTML=`<header><b>rivalitaz.121</b><button id="logout" class="ghost">Logout</button></header><main>${content}</main>`;
-    $('#logout')?.addEventListener('click',()=>{stopForegroundLocation();API.clearSession();state.session=null;window.currentUser=null;render()});
+    $('#logout')?.addEventListener('click',async()=>{try{await API.call('logout')}catch(e){}stopForegroundLocation();API.clearSession();state.session=null;window.currentUser=null;render()});
   }
   function render(){
     if(!state.session) return login();
