@@ -1,5 +1,5 @@
 window.APP_CONFIG = {
   APP_NAME: 'rivalitaz.121',
   // WAJIB: ganti dengan URL Web App Apps Script yang berakhiran /exec.
-  API_URL: 'PASTE_APPS_SCRIPT_EXEC_URL_HERE'
+  API_URL: 'https://script.google.com/macros/s/AKfycbwEgM9CxSxO8KKPlFk8Gj4DeBnuMwVUAp60tQLPo1stCLZGufhnogPGZellzgo2DwPj/exec'
 };
